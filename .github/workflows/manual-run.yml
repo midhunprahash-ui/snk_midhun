@@ -14,6 +14,14 @@ jobs:
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Configure custom contribution pattern
+          cells: |
+            # M   M  III  DDDD  H   H  U   U  N   N
+            4 0 4 0 4 2 2 2 3 3 4 0 4 4 0 4 4 0 4
+            4 4 4 4 4 0 2 0 3 0 4 0 4 4 0 4 4 4 4
+            4 0 4 0 4 0 2 0 3 0 4 4 4 4 0 4 4 0 4
+            4 0 4 0 4 0 2 0 3 0 4 0 4 4 0 4 4 0 4
+            4 0 4 0 4 2 2 2 3 3 4 0 4 4 0 4 4 0 4
           outputs: |
             dist/only-svg/github-contribution-grid-snake.svg
             dist/only-svg/github-contribution-grid-snake-dark.svg?palette=github-dark
@@ -22,6 +30,14 @@ jobs:
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Configure custom contribution pattern
+          cells: |
+            # M   M  III  DDDD  H   H  U   U  N   N
+            4 0 4 0 4 2 2 2 3 3 4 0 4 4 0 4 4 0 4
+            4 4 4 4 4 0 2 0 3 0 4 0 4 4 0 4 4 4 4
+            4 0 4 0 4 0 2 0 3 0 4 4 4 4 0 4 4 0 4
+            4 0 4 0 4 0 2 0 3 0 4 0 4 4 0 4 4 0 4
+            4 0 4 0 4 2 2 2 3 3 4 0 4 4 0 4 4 0 4
           outputs: |
             dist/docker/github-contribution-grid-snake.svg
             dist/docker/github-contribution-grid-snake-dark.svg?palette=github-dark
